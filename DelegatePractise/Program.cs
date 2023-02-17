@@ -17,20 +17,20 @@ namespace DelegatePractise
             //messages("Message!");
             #endregion
             #region #2
-            //MathDel mathfunctions = new MathDel(MyMath.Add);
-            //mathfunctions += MyMath.Sub;
-            //mathfunctions += MyMath.Mult;
-            //mathfunctions(6,2);
+            MathDel mathfunctions = new MathDel(MyMath.Add);
+            mathfunctions += MyMath.Sub;
+            mathfunctions += MyMath.Mult;
+            mathfunctions.Invoke(2,5);
             #endregion
             #region #3
-            ArtihDel arithfunctions = new ArtihDel(Arithmetic.IsEven);
-            arithfunctions += Arithmetic.IsOdd;
-            arithfunctions += Arithmetic.IsFibonacci;
-            arithfunctions += Arithmetic.IsSimple;
+            //ArtihDel arithfunctions = new ArtihDel(Arithmetic.IsEven);
+            //arithfunctions += Arithmetic.IsOdd;
+            //arithfunctions += Arithmetic.IsFibonacci;
+            //arithfunctions += Arithmetic.IsSimple;
 
-            arithfunctions(2);
+            //arithfunctions(2);
 
-            Arithmetic.Func(16, Arithmetic.IsFibonacci);
+            //Arithmetic.Func(16, Arithmetic.IsFibonacci);
 
             
           
